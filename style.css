@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.85),rgba(64, 24, 27, 0.25)),url(images/background_sivkyne.webp);
+	background-size: cover;
+	background-position: top;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.logo:hover{
+	transform:scale(85%);
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #684182;
+	position: absolute; 
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #FFF
+}
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+	padding: 20px;
+}
+.content p{
+	margin-right: 200px;
+	margin-left: 200px;
+	font-size:larger;
+	font-weight: 100;
+	line-height: 25px;
+	padding-bottom: 25px;
+}
+.link_button {
+	background-color:#69b3ad;
+	color: #FFF;
+	padding: 15px;
+	text-decoration: none;
+}
+.link_button:hover {
+	background-color: #684182;
+}
+.sivcircle {
+	width: 300px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.sivcircle:hover {
+	transform:scale(85%)
+}
